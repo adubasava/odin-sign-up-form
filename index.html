@@ -5,9 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lucymar-sans" type="text/css"/> 
 </head>
 <body>
-    Photo by <a href="https://unsplash.com/@francesco_ungaro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Francesco Ungaro</a> on <a href="https://unsplash.com/photos/a-mountain-range-covered-in-snow-under-a-blue-sky-HL-ty3bVeq4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
+    <div class="sidebar">
+        <div class="empty">
+
+        </div>
+        <div class="logo">
+            <img src="./img/odin-logo.png"> 
+            Odin
+        </div>
+        <div class="author">Photo by <a href="https://unsplash.com/@davidmarcu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Marcu</a> on <a href="https://unsplash.com/photos/landscape-photography-of-mountain-hit-by-sun-rays-78A265wPiO4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="before-form">
+            <p>This is not a real online service! You know you need something like this 
+                in your life to help you realize your deepest dreams.<br> 
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <fieldset>
+                        <div class="input-box">
+                            <label for="fname">First name</label>
+                            <input type="text" name="fname" id="fname">
+                            <label for="lname">Last name</label>
+                            <input type="text" name="lname" id="lname">
+                        </div>                        
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-box">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass1" id="pass1">
+                            <label for="pass">Confirm password</label>
+                            <input type="password" name="pass2" id="pass2">
+                        </div>
+                    </fieldset>
+                </fieldset>
+            </form>    
+        </div>        
+        <div class="after-form">
+            <button type="submit">Create Account</button>
+            <p class="smaller">Already have an account? <a href="#">Log in</a></p>
+        </div>        
+    </div>
+    
+    
 </body>
 </html>

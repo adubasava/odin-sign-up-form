@@ -1,5 +1,133 @@
-﻿body {
-    background: no-repeat url("./img/bg.jpg");
-    background-color: #072e47;
+﻿@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+  }
+
+body {
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #4f4a21;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* font-family: 'AvaraBold', 'Times New Roman', Times, serif; */
+    font-family: 'LucymarSansRegular', 'Times New Roman', Times, serif;
+}
+
+.sidebar {
+    width:30%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty {
+    height: 400px;
+}
+
+.logo {    
+    height: 100vh;
+    background-color: #4f4a21;
+    opacity: 0.3;
+    height: 180px;
+    font-family: Norse-Bold, 'Times New Roman', Times, serif;
+    font-size: 64px;
+}
+
+img {
+    width: auto;
+    height: 180px;
+}
+
+.author {
+    color: white;
+}
+
+div > a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    width: 70%;
+    height: 100vh;
+    background-color: #d3c19c;
+    margin: 0;
+}
+
+.before-form, .after-form {
+    background-color: #d3c19c;
+    padding: 25px;
+    margin: 0;
+}
+
+.before-form {
+    padding-top: 100px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px;
+}
+
+fieldset {
+    border: none;
+}
+
+p {    
+    font-size: 20px;
+    padding-right: 10%;
+}
+
+.smaller {
+    font-size: 16px;
+}
+
+p > a {
+    color: #4f4a21;
+    text-decoration: none;
+}
+
+button[type=submit] {
+    background-color: #4f4a21;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 24px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 4px 4px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+legend {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -15px;
+    padding: 0 5px;
+}
+
+input {
+    border-color: #E5E7EB;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+input:focus {
+    background-color: rgb(214, 192, 146, 0.2);
+    outline: none;
+    border-color: #4E4336;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 4px 4px 0 rgba(0,0,0,0.19);
+}
+
+.input-box {
+    position: relative;
 }
