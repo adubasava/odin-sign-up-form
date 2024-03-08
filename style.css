@@ -12,39 +12,49 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    /* font-family: 'AvaraBold', 'Times New Roman', Times, serif; */
     font-family: 'LucymarSansRegular', 'Times New Roman', Times, serif;
 }
 
 .sidebar {
-    width:30%;
+    width: 30%;
     height: 100vh;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.empty {
-    height: 400px;
+    position: fixed;
+    left: 0;
 }
 
 .logo {    
-    height: 100vh;
-    background-color: #4f4a21;
-    opacity: 0.3;
-    height: 180px;
-    font-family: Norse-Bold, 'Times New Roman', Times, serif;
-    font-size: 64px;
+    background-color: rgb(79, 74, 33, 0.3);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 200px 0 0 0;
 }
 
 img {
     width: auto;
-    height: 180px;
+    height: 80px;
+}
+
+.logo-text, .image-container {
+    height: 100px;    
+    font-family: Norse-Bold, 'Times New Roman', Times, serif;
+    font-size: 64px;    
+    color: white;
+}
+
+.foot {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .author {
+    position: absolute;
+    bottom: 20px;
     color: white;
+    font-size: 12px;
 }
 
 div > a {
@@ -53,10 +63,12 @@ div > a {
 }
 
 .main {
+    margin-left: 30%;
+    padding: 0px 10px;
     width: 70%;
     height: 100vh;
     background-color: #d3c19c;
-    margin: 0;
+    box-sizing: border-box;
 }
 
 .before-form, .after-form {
@@ -90,6 +102,7 @@ p {
 p > a {
     color: #4f4a21;
     text-decoration: none;
+    font-weight: 700;
 }
 
 button[type=submit] {
