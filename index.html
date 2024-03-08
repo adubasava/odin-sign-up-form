@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lucymar-sans" type="text/css"/> 
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lucymar-sans" type="text/css"/>
+    <script src="script.js" defer></script> 
 </head>
 <body>
     <div class="sidebar">
@@ -30,8 +31,9 @@
             </p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div class="form-container">
-            <form action="">
+        
+        <form action="#" method="get">
+            <div class="form-container">
                 <fieldset>
                     <legend>Let's do this!</legend>
                     <fieldset>
@@ -45,9 +47,9 @@
                     <fieldset>
                         <div class="input-box">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" placeholder="you@example.com">
                             <label for="phone">Phone number</label>
-                            <input type="tel" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone" pattern="[\+]\d{3}[\(]\d{2}[\)]\d{3}[\-]\d{4}" placeholder="+999(99)999-9999">
                         </div>
                     </fieldset>
                     <fieldset>
@@ -57,16 +59,15 @@
                             <label for="pass">Confirm password</label>
                             <input type="password" name="pass2" id="pass2">
                         </div>
+                        <div class="message"></div>
                     </fieldset>
-                </fieldset>
-            </form>    
-        </div>        
-        <div class="after-form">
-            <button type="submit">Create Account</button>
-            <p class="smaller">Already have an account? <a href="#">Log in</a></p>
-        </div>        
-    </div>
-    
-    
+                </fieldset>                
+            </div>   
+            <div class="after-form">
+                <button type="submit" class="submit">Create Account</button>
+                <p class="smaller">Already have an account? <a href="#">Log in</a></p>
+            </div>                
+        </form>     
+    </div>   
 </body>
 </html>

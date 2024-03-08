@@ -64,11 +64,9 @@ div > a {
 
 .main {
     margin-left: 30%;
-    padding: 0px 10px;
     width: 70%;
     height: 100vh;
     background-color: #d3c19c;
-    box-sizing: border-box;
 }
 
 .before-form, .after-form {
@@ -84,6 +82,8 @@ div > a {
 .form-container {
     background-color: white;
     padding: 25px;
+    margin: 0;
+    box-shadow: #c0b092 0px -50px 1px -40px inset, #c0b092 0px 5px 1px 0px inset;
 }
 
 fieldset {
@@ -129,18 +129,34 @@ label {
 }
 
 input {
-    border-color: #E5E7EB;
+    border: 1px solid #E5E7EB;
     border-radius: 3px;
     margin-right: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    height: 30px;
 }
 
 input:focus {
-    background-color: rgb(214, 192, 146, 0.2);
+    background-color: rgb(214, 192, 146, 0.1);
     outline: none;
-    border-color: #4E4336;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 4px 4px 0 rgba(0,0,0,0.19);
+    border-color: rgb(30, 144, 255, 0.5);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
 }
 
 .input-box {
     position: relative;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.error {
+    border-color: red;
+}
+
+.message {
+    color: red;
+    margin-top: 0;
 }
