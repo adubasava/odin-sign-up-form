@@ -1,1 +1,3 @@
-# odin-sign-up-form
+# Odin Project: Sign-up Form 
+
+Intermediate HTML and CSS
